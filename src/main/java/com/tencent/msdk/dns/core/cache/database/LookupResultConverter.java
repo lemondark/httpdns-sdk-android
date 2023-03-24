@@ -1,7 +1,5 @@
 package com.tencent.msdk.dns.core.cache.database;
 
-import androidx.room.TypeConverter;
-
 import com.tencent.msdk.dns.core.LookupResult;
 import com.tencent.msdk.dns.core.rest.share.AbsRestDns;
 
