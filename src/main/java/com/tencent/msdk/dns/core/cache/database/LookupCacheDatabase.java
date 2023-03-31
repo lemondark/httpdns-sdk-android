@@ -16,7 +16,7 @@ import java.lang.reflect.Method;
 
 @Database(entities = {LookupCache.class}, version = 2, exportSchema = false)
 @TypeConverters(LookupResultConverter.class)
-public abstract class LookupCacheDatabase extends RoomDatabaseImpl.RoomDatabase {
+public abstract class LookupCacheDatabase extends RoomDatabase {
     private static final String ROOM_DATABASE_NAME = LookupCacheDatabase.class.getSimpleName();
     private Object ttt = RoomDatabaseImpl.getRoomDatabaseClass();
     private static final String ROOM_CLASS_NAME = "androidx.room.Room";
@@ -53,5 +53,5 @@ public abstract class LookupCacheDatabase extends RoomDatabaseImpl.RoomDatabase 
 //                .build();
     }
 
-    Class RoomDatabase = Class.forName("androidx.room.RoomDatabase");
+//    Class RoomDatabase = Class.forName("androidx.room.RoomDatabase");
 }
